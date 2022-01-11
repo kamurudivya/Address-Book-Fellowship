@@ -96,7 +96,7 @@ public class Helper {
                     email = InputUtil.getStringValue();
                     PERSON.get(id).setEmail(email);
                     break;
-                case 6:
+                case 7:
                     i=1;
                     break;
                 default:
@@ -105,4 +105,17 @@ public class Helper {
             System.out.println(PERSON.get(id));
         }
     } //end of edit() method
+     //	DELETE METHOD
+    public void deleteRecord()
+    {
+        int id;
+        for(Person p: PERSON)
+        {
+            System.out.println("ID: #"+PERSON.indexOf(p)+" : "+p);
+        }
+        System.out.print("\nEnter #ID to delete Contact : ");
+        id = InputUtil.getIntValue();
+        PERSON.remove(id);
+    }
+}
 }
