@@ -1,5 +1,4 @@
 /*
- *@author: Shubham Pattar
  *main code for address book management
  *this file is the gateway for all functions
  */
