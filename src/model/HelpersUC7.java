@@ -118,7 +118,13 @@ public class Helper {
         PERSON.remove(id);
     }
 }
-public boolean checkExists(String fname)
+ public void sortRecords()
+    {
+        Sort.sortByName(PERSON);
+    }
+
+//    this function will check for duplicate users
+    public boolean checkExists(String fname)
     {
         int flag=0;
         for (Person p: PERSON)
@@ -135,4 +141,5 @@ public boolean checkExists(String fname)
         }
         return false;
     }
+}
 }

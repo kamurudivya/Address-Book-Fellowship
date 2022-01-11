@@ -91,12 +91,17 @@ public class PersonUc2
         return email;
     }
 
-    public void setemail(String email)
-    {
-        this.email = email;
-    }
-
-    @Override//In any object-oriented programming language, Overriding is a feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes
+   public static Comparator<Person> firstNameSorting = new Comparator<Person>() {
+        @Override
+        public int compare(Person p1, Person p2)
+        {
+            String fname1 = p1.getFname();
+            String fname2 = p2.getFname();
+            // ascending order
+            return fname1.compareTo(fname2);
+        }
+    };
+        @Override//In any object-oriented programming language, Overriding is a feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes
     public String toString() {
         return "Person{" +
                 "fname='" + fname + '\'' +
