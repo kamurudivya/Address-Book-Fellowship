@@ -96,7 +96,7 @@ public class Helper {
                     email = InputUtil.getStringValue();
                     PERSON.get(id).setEmail(email);
                     break;
-                case 6:
+                case 7:
                     i=1;
                     break;
                 default:
